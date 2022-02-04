@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
+    
+}
+
+.contenedor{
+    width: 60%;
+    height: 70vh;
+    border-radius: 7px   7px  7px 320px;
+    margin: 15vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 10px 23px -7px #000000, inset 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 23px -7px #000000, inset 5px 5px 15px 5px rgba(0,0,0,0);
+    overflow: hidden ;
+    border-bottom: solid 1px white;
+    border-left: solid 1px white;
+    border-top: 1px solid white;
+  
+    
+}
+
+.cart1{
+    background: #8e2de2; 
+    background: -webkit-linear-gradient(to right, #8e2de2, #5D00FF); 
+    background: linear-gradient(to right, #8e2de2, #5D00FF); 
+    width: 50%;
+    position: relative;
+}
+
+.cart2{
+   background-color: white;
+    
+    width: 50%;
+    position: relative;
+}
+
+.contxt{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contxt h2{
+    color: white;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px #000000;
+     font-size: 2.5rem;
+     
+
+
+}
+
+.logozir{
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.formlogin{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+input[type=text], input[type=password]{
+    outline: none;
+    border-radius: 7px 7px 7px  320px ;
+    border-top: none;
+    border-right: none;
+    border-left: 1px solid #5D00FF;
+    border-bottom: 1px solid #5D00FF;
+  width: 100%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 7px;
+    text-align: center;
+    background-color: transparent;
+  
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+
+.formlogin h2{
+    color: #5D00FF;
+    text-transform: capitalize;
+  text-align: center;
+     font-size: 2.5rem;
+     text-shadow: 2px 2px 2px #868686;
+    
+ 
+}
+
+input[type=submit]{
+    background-color: #5D00FF;
+    width: 50%;
+    color: white;
+    margin-top: 25px;
+    margin-left: 25% ;
+    padding: 7px;
+    border: none;
+    border-radius: 7px 7px 7px  320px ;
+    -webkit-box-shadow: 0px 10px 23px -7px #000000, inset 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 23px -7px #000000, inset 5px 5px 15px 5px rgba(0,0,0,0);
+    text-shadow: 2px 2px 2px #868686;
+font-size: 1rem;
+}

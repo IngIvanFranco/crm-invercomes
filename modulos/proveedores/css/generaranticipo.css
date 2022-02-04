@@ -1,0 +1,53 @@
+.parcial, .total{
+    display: none;
+}
+
+#modopago:checked ~ .total{
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    background: rgb(226, 226, 226);
+    
+
+    box-shadow:  -10px 10px 20px #8b8b8b,
+                 10px -10px 20px #ffffff;
+    
+
+}
+
+
+#modopago1:checked ~ .parcial{
+    display: block;
+    
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid rgb(226, 226, 226);
+    
+    background: rgb(230, 230, 230);
+    box-shadow:  -10px 10px 20px #8b8b8b,
+                 10px -10px 20px #ffffff;
+}
+
+.input50{
+    width: 48%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+select{
+    margin: 20px auto;
+    background: white;
+    box-shadow:  -10px 10px 20px #8b8b8b,
+                 10px -10px 20px #ffffff;
+}
+
+.radio{
+    display: none;
+}
+
+.contenbtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}

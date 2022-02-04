@@ -1,0 +1,77 @@
+
+html{
+    padding: 5px;
+     background: linear-gradient(to right, #727272, #cfcfcf, #ffffff );
+    background-size: 600% 400%;
+    animation: bgmovil 20s ease infinite;
+}
+
+@keyframes bgmovil{
+  0% {background-position: 0% 50%;}
+  50%{background-position: 100% 50%;}
+  100%{background-position: 0% 50% ;}
+  }
+  
+
+/********************************grid*****************************************/
+
+.container {  display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr 1fr;
+    grid-template-rows: 10% 90% 50%;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "menu cabecera cabecera cabecera"
+      "menu trabajo trabajo trabajo"
+      "menu trabajo trabajo trabajo";
+  }
+
+  
+  .trabajo { 
+      grid-area: trabajo;
+      height: 88vh;
+      border: 3px solid #d8d8d8;
+      padding: 15px;
+      border-radius: 7px;
+      overflow-y: scroll;
+      background: white;
+     }
+  
+  .cabecera { 
+      grid-area: cabecera; 
+      background: repeating-linear-gradient(
+        -45deg,
+        white 5px,
+        white 10px,
+        #f1f1f1 10px,
+        #f1f1f1 15px);
+      border: 3px solid #d8d8d8;
+      padding: 5px;
+      border-radius: 7px;
+     
+    }
+  
+  .menu { 
+      grid-area: menu; 
+      height: 98.5vh;
+      border: 3px solid #d8d8d8;
+      padding: 5px;
+      border-radius: 7px;
+      background: repeating-linear-gradient(
+        45deg,
+        white 5px,
+        white 10px,
+        #f1f1f1 10px,
+        #f1f1f1 15px);
+    }
+  
+
+    .cabecera h1{
+   
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+  color: rgb(209, 209, 209);
+  text-shadow: 2px 2px 2px  black ;
+
+    }

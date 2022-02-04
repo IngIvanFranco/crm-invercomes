@@ -1,0 +1,384 @@
+h3{
+    color: red;
+}
+
+/* Curso CSS aprenderaprogramar.com */
+
+table.paleBlueRows {
+    font-family: "Times New Roman", Times, serif;
+    border: 1px solid #FFFFFF;
+    width:800px;
+  
+    text-align: center;
+    border-collapse: collapse;
+    margin: 30px auto;
+  }
+  table.paleBlueRows td, table.paleBlueRows th {
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+    padding: 3px 2px;
+  }
+  table.paleBlueRows tbody td {
+    font-size: 13px;
+  }
+  table.paleBlueRows tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+  table.paleBlueRows thead {
+    background: #0B6FA4;
+    border-bottom: 5px solid #FFFFFF;
+  }
+  table.paleBlueRows thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #FFFFFF;
+ 
+  }
+  table.paleBlueRows thead th:first-child {
+    border-left: none;
+  }
+  
+  table.paleBlueRows tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    background: #D0E4F5;
+    border-top: 3px solid #444444;
+  }
+  table.paleBlueRows tfoot td {
+    font-size: 14px;
+  }
+
+  select{
+    text-transform: uppercase;
+  }
+.input100{
+    width: 100%;
+
+}
+
+.input50{
+    width: 45%;
+
+}
+
+.input30{
+    width: 30%;
+}
+.input80{
+  width: 60%;
+  margin: 25px auto;
+  color: #0B6FA4;
+}
+
+.btn_add{
+  height: 30px;
+  margin: 25px auto;
+  
+}
+.cont_btn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.vlrtotal{
+
+    padding: 5px;
+  background: #0B6FA4;
+    color:#FFFFFF;
+    text-align: center;
+  font-weight: bold;
+    border-radius: 7px;
+    width: 800px;
+    margin: 30px auto;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+
+/*******************modal add producto nuevo****************/
+
+
+body{
+  position: relative;
+}
+
+#show-modal{
+  transition: all 0.15s linear;
+}
+
+.modal{
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 999999999;
+  background-color: rgba(0,0,0,0.75);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.modal .content-modal{
+  width: 100%;
+  max-width: 600px;
+  position: fixed;
+  left: 50%;
+  top: -100vh;
+  transition: top 0.35s ease;
+  margin-left: -250px;
+  background:linear-gradient(to left, #1e62d0 , rgb(28, 209, 241));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  z-index: 999999999;
+  
+
+}
+
+.modal h2{
+  padding: 0.5em;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+  text-transform: capitalize;
+}
+
+.modal article{
+  height: 350px;
+  background-color: #dbdbdb;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  
+
+}
+
+.close-modal{
+  color: #ffffff;
+  position: absolute;
+  top: 0.2em;
+  right: 0.375em;
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.modal a:hover{
+  color:#c0392b;
+}
+
+.modal:target{
+  opacity: 1;
+  top: 0;
+}
+
+.modal .btn-close-modal{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999991;
+
+}
+
+.modal:target .content-modal{
+  top: 50px;
+  transition: top 0.35s ease;
+  
+}
+
+
+
+/*******************modal add producto existente****************/
+
+
+#show-modal{
+  transition: all 0.15s linear;
+}
+
+.modal2{
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 999999999;
+  background-color: rgba(0,0,0,0.75);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.modal2 .content-modal{
+  width: 100%;
+  max-width: 600px;
+  position: fixed;
+  left: 50%;
+  top: -100vh;
+  transition: top 0.35s ease;
+  margin-left: -250px;
+  background:linear-gradient(to left, #1e62d0 , rgb(28, 209, 241));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  z-index: 999999999;
+  
+
+}
+
+.modal2 h2{
+  padding: 0.5em;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+  text-transform: capitalize;
+}
+
+.modal2 article{
+  height: 350px;
+  background-color: #dbdbdb;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  
+
+}
+
+.close-modal{
+  color: #ffffff;
+  position: absolute;
+  top: 0.2em;
+  right: 0.375em;
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.modal2 a:hover{
+  color:#c0392b;
+}
+
+.modal2:target{
+  opacity: 1;
+  top: 0;
+}
+
+.modal2 .btn-close-modal{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999991;
+
+}
+
+.modal2:target .content-modal{
+  top: 50px;
+  transition: top 0.35s ease;
+  
+}
+
+
+
+
+/*******************modal editar producto****************/
+
+
+#show-modal{
+  transition: all 0.15s linear;
+}
+
+.modal3{
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 999999999;
+  background-color: rgba(0,0,0,0.75);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.modal3 .content-modal{
+  width: 100%;
+  max-width: 600px;
+  position: fixed;
+  left: 50%;
+  top: -100vh;
+  transition: top 0.35s ease;
+  margin-left: -250px;
+  background:linear-gradient(to left, #1e62d0 , rgb(28, 209, 241));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  z-index: 999999999;
+  
+
+}
+
+.modal3 h2{
+  padding: 0.5em;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+  text-transform: capitalize;
+}
+
+.modal3 article{
+  height: 350px;
+  background-color: #dbdbdb;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  
+
+}
+
+.close-modal{
+  color: #ffffff;
+  position: absolute;
+  top: 0.2em;
+  right: 0.375em;
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.modal3 a:hover{
+  color:#c0392b;
+}
+
+.modal3:target{
+  opacity: 1;
+  top: 0;
+}
+
+.modal3 .btn-close-modal{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999991;
+
+}
+
+.modal3:target .content-modal{
+  top: 50px;
+  transition: top 0.35s ease;
+  
+}

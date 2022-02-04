@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    padding: 5px;
+    
+    color: rgb(209, 209, 209);
+    text-shadow: 2px 2px 2px  black ;
+}
+.trabajo{
+    display: flex;
+    vertical-align: middle;
+}
+
+
+.imgindex{
+    display: block;
+    width: 600px;
+    margin: auto;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
